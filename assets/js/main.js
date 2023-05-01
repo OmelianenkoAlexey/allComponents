@@ -20,3 +20,11 @@ function outNum(num, elem) {
 outNum(875, 'out-1');
 
 
+async function fetchData () {
+  const response = await fetch('./data.json');
+  console.log(response);
+  // const data = response.json();
+  // console.log(data);
+}
+
+fetchData();
